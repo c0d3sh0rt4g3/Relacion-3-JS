@@ -1,10 +1,10 @@
 let numbOfPlants = parseFloat(prompt("¿De cuántas plantas quiere la pirámide?"))
 if (numbOfPlants){
-    pyramid(numbOfPlants)
+  exercise05(numbOfPlants)
 }else{
     alert("El dato introducido no es válido")
 }
-function pyramid(numbOfPlants) {
+function exercise05(numbOfPlants) {
     for (let i = 0; i < numbOfPlants; i++) {
       let plant = "<br>"
       for (let j = 1; j < numbOfPlants - i; j++) {

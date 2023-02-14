@@ -1,4 +1,4 @@
-function pyramid() {
+function exercise04() {
     let numbOfPlants = 5
     for (let i = 0; i < numbOfPlants; i++) {
       let plant = "<br>"
