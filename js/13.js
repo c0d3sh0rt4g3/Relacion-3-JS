@@ -12,22 +12,15 @@ if (number){
 }else{
     alert("ERROR: El dato introducido no es un número.")
 }
-function exercise13(number){
-    if(Number.isInteger(number) && Math.sign(number) == 1){
-        if(number == 1){
-            return false
-        }else if(number === 2){
-            return true
-        }else{
-            for(let i = 2; i < number; i++){
-                if(number % i != 0){
-                    return true
-                }else{
-                    return false
-                }
-            }
-        }
-    }else{
-        return null
+
+function exercise13(number) {
+    if (number < 2) {
+      return false
     }
-}
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+      if (number % i === 0) {
+        return false
+      }
+    }
+    return true
+  }
